@@ -1,0 +1,22 @@
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\bin\Debug\netcoreapp2.1\MachineLearningTest.deps.json
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\bin\Debug\netcoreapp2.1\MachineLearningTest.runtimeconfig.json
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\bin\Debug\netcoreapp2.1\MachineLearningTest.runtimeconfig.dev.json
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\bin\Debug\netcoreapp2.1\MachineLearningTest.dll
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\bin\Debug\netcoreapp2.1\MachineLearningTest.pdb
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\obj\Debug\netcoreapp2.1\MachineLearningTest.csproj.CoreCompileInputs.cache
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\obj\Debug\netcoreapp2.1\MachineLearningTest.AssemblyInfoInputs.cache
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\obj\Debug\netcoreapp2.1\MachineLearningTest.AssemblyInfo.cs
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\obj\Debug\netcoreapp2.1\MachineLearningTest.dll
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\obj\Debug\netcoreapp2.1\MachineLearningTest.pdb
+C:\Users\Aaron\Documents\Visual Studio 2019\Projects\MachineLearningTest\obj\Debug\netcoreapp2.1\MachineLearningTest.csprojAssemblyReference.cache
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\bin\Debug\netcoreapp2.1\MachineLearningTest.deps.json
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\bin\Debug\netcoreapp2.1\MachineLearningTest.runtimeconfig.json
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\bin\Debug\netcoreapp2.1\MachineLearningTest.runtimeconfig.dev.json
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\bin\Debug\netcoreapp2.1\MachineLearningTest.dll
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\bin\Debug\netcoreapp2.1\MachineLearningTest.pdb
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\obj\Debug\netcoreapp2.1\MachineLearningTest.csprojAssemblyReference.cache
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\obj\Debug\netcoreapp2.1\MachineLearningTest.csproj.CoreCompileInputs.cache
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\obj\Debug\netcoreapp2.1\MachineLearningTest.AssemblyInfoInputs.cache
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\obj\Debug\netcoreapp2.1\MachineLearningTest.AssemblyInfo.cs
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\obj\Debug\netcoreapp2.1\MachineLearningTest.dll
+C:\Users\Nathan\Source\Repos\Machine-Learning-Test\obj\Debug\netcoreapp2.1\MachineLearningTest.pdb
