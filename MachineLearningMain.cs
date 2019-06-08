@@ -1,5 +1,7 @@
 ﻿using System;
-using TensorFlow;
+using System.IO;
+using Microsoft.ML;
+using Microsoft.ML.Data;
 
 namespace MachineLearningTest
 {
@@ -10,4 +12,23 @@ namespace MachineLearningTest
             Console.WriteLine("Hello World!");
         }
     }
+
+     class SalaryData
+    {
+        [LoadColumn(0)]
+        public float YearsExperience;
+
+        [LoadColumn(1)]
+        public float Salary;
+    }
+
+     class SalaryDataPrediction
+    {
+        [ColumnName("Score")]
+        public float Salary;
+    }
+
+
+
+
 }
