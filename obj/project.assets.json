@@ -141,6 +141,39 @@
           "lib/netstandard2.0/Microsoft.ML.DataView.dll": {}
         }
       },
+      "Microsoft.ML.FastTree/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.ML": "1.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.ML.FastTree.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.ML.FastTree.props": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libFastTreeNative.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libFastTreeNative.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/FastTreeNative.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/FastTreeNative.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -1145,6 +1178,26 @@
         "lib/netstandard2.0/Microsoft.ML.DataView.xml",
         "microsoft.ml.dataview.1.1.0.nupkg.sha512",
         "microsoft.ml.dataview.nuspec"
+      ]
+    },
+    "Microsoft.ML.FastTree/1.1.0": {
+      "sha512": "ONauvGIaqeUKG/r3koGEwEut6FsJWmcRdtY/ZhxU2rt038RiK1xCLJO5PbqRwO+9o1LFGz2vbIPBUanX0stPKQ==",
+      "type": "package",
+      "path": "microsoft.ml.fasttree/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/netstandard2.0/Microsoft.ML.FastTree.props",
+        "lib/netstandard2.0/Microsoft.ML.FastTree.dll",
+        "lib/netstandard2.0/Microsoft.ML.FastTree.xml",
+        "microsoft.ml.fasttree.1.1.0.nupkg.sha512",
+        "microsoft.ml.fasttree.nuspec",
+        "runtimes/linux-x64/native/libFastTreeNative.so",
+        "runtimes/osx-x64/native/libFastTreeNative.dylib",
+        "runtimes/win-x64/native/FastTreeNative.dll",
+        "runtimes/win-x86/native/FastTreeNative.dll"
       ]
     },
     "Microsoft.NETCore.App/2.1.0": {
@@ -4027,28 +4080,29 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.ML >= 1.1.0",
+      "Microsoft.ML.FastTree >= 1.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "TensorFlowSharp >= 1.13.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nathan\\.nuget\\packages\\": {},
+    "C:\\Users\\Aaron\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nathan\\source\\repos\\MachineLearningTest\\MachineLearningTest.csproj",
+      "projectUniqueName": "C:\\Users\\Aaron\\Desktop\\MachineLearningTest\\MachineLearningTest.csproj",
       "projectName": "MachineLearningTest",
-      "projectPath": "C:\\Users\\Nathan\\source\\repos\\MachineLearningTest\\MachineLearningTest.csproj",
-      "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nathan\\source\\repos\\MachineLearningTest\\obj\\",
+      "projectPath": "C:\\Users\\Aaron\\Desktop\\MachineLearningTest\\MachineLearningTest.csproj",
+      "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aaron\\Desktop\\MachineLearningTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4073,6 +4127,10 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.ML": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
+          "Microsoft.ML.FastTree": {
             "target": "Package",
             "version": "[1.1.0, )"
           },

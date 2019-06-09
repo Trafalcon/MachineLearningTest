@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nathan\\source\\repos\\MachineLearningTest\\MachineLearningTest.csproj": {}
+    "C:\\Users\\Aaron\\Desktop\\MachineLearningTest\\MachineLearningTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nathan\\source\\repos\\MachineLearningTest\\MachineLearningTest.csproj": {
+    "C:\\Users\\Aaron\\Desktop\\MachineLearningTest\\MachineLearningTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nathan\\source\\repos\\MachineLearningTest\\MachineLearningTest.csproj",
+        "projectUniqueName": "C:\\Users\\Aaron\\Desktop\\MachineLearningTest\\MachineLearningTest.csproj",
         "projectName": "MachineLearningTest",
-        "projectPath": "C:\\Users\\Nathan\\source\\repos\\MachineLearningTest\\MachineLearningTest.csproj",
-        "packagesPath": "C:\\Users\\Nathan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nathan\\source\\repos\\MachineLearningTest\\obj\\",
+        "projectPath": "C:\\Users\\Aaron\\Desktop\\MachineLearningTest\\MachineLearningTest.csproj",
+        "packagesPath": "C:\\Users\\Aaron\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aaron\\Desktop\\MachineLearningTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Nathan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aaron\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,6 +42,10 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.ML": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.ML.FastTree": {
               "target": "Package",
               "version": "[1.1.0, )"
             },
