@@ -14,13 +14,27 @@ namespace MachineLearningTest
 
         static void Main(string[] args)
         {
-            MLContext mLContext = new MLContext(seed: 0);
-            var model = Train(MLContext, _trainDataPath);
+            MLContext mlContext = new MLContext(seed: 0);
+            var model = Train(mlContext, _trainDataPath);
+            Evaluate(mlContext, model);
         }
 
-        public static ITransformer Train(MLContext mLContext, string dataPath)
+        public static ITransformer Train(MLContext mlContext, string dataPath)
         {
-            IDataView dataView = mLContext.Data.LoadFromTextFile<SalaryData>(dataPath, hasHeader: true, separatorChar: ',');
+            IDataView dataView = mlContext.Data.LoadFromTextFile<TaxiTrip>(dataPath, hasHeader: true, separatorChar: ',');
+            var pipeline = mlContext.Transforms.CopyColumns(outputColumnName: "Label", inputColumnName: "FareAmount")
+            .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "VendorIdEncoded", inputColumnName: "VendorId"))
+            .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "RateCodeEncoded", inputColumnName: "RateCode"))
+            .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "PaymentTypeEncoded", inputColumnName: "PaymentType"))
+            .Append(mlContext.Transforms.Concatenate("Features", "VendorIdEncoded", "RateCodeEncoded", "PassengerCount", "TripTime", "TripDistance", "PaymentTypeEncoded"))
+            .Append(mlContext.Regression.Trainers.FastTree());
+            var model = pipeline.Fit(dataView);
+            return model;
+        }
+
+        private static void Evaluate(MLContext mlContext, ITransformer model)
+        {
+            IDataView dataView = mlContext.Data.LoadFromTextFile<TaxiTrip>(_testDataPath, hasHeader: true, separatorChar: ',');
         }
     }
 
